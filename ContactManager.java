@@ -14,17 +14,24 @@ class ContactManager {
 
     // Method to add a new Contact
     public void addContact(Contact contact) {
-        // Your code here
+        contacts.add(contact);
     }
 
     // Method to remove a Contact by name
     public void removeContact(String name) {
-        // Your code here
-    }
+        for(int i = 0; i < contacts.size(); i++){
+            Contact contact = contacts.get(i);
+            if(contact.getName() == name){
+                contacts.remove(i);
+                }
+            }
+        }
 
     // Method to list all Contacts
     public void listContacts() {
-        // Your code here
+        for (Contact c : contacts) {
+            System.out.println(c.toString());
+        }
     }
 
 
