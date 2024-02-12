@@ -1,5 +1,5 @@
 public class Program {
-        // Main method for testinbg
+        // Main method for testing
         public static void main(String[] args) {
             // Create a ContactManager object
             ContactManager manager = new ContactManager();
