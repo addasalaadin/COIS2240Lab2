@@ -17,7 +17,7 @@ class ContactManager {
         contacts.add(contact);
     }
 
-    // Method to remove a Contact by name
+    // Method to remove a Contact by name.
     public void removeContact(String name) {
         // goes through list
         for(int i = 0; i < contacts.size(); i++){
