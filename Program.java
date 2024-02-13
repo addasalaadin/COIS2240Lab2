@@ -12,7 +12,7 @@ public class Program {
             manager.listContacts();
     
             // Remove a contact
-            manager.removeContact("Alaadin");
+            manager.removeContact("Salma");
     
             // List contacts again to see the change
             manager.listContacts();
