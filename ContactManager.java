@@ -14,17 +14,35 @@ class ContactManager {
 
     // Method to add a new Contact
     public void addContact(Contact contact) {
-        // Your code here
+        if (contacts.contains(contact)){
+            System.out.println(contact.toString() + " already exists in contacts");
+        }
+        else{
+            contacts.add(contact);
+            System.out.println(contact.getName() + " has been added to contacts");
+        }
+        
     }
 
     // Method to remove a Contact by name
     public void removeContact(String name) {
-        // Your code here
+        for(Contact contact: contacts){
+            if (contact.getName() == name){
+                contacts.remove(contact);
+                System.out.println(name + " has been removed from contacts");
+                return;
+            }
+        }
+        System.out.println(name + " is not in contacts");
     }
 
     // Method to list all Contacts
     public void listContacts() {
-        // Your code here
+        System.out.println("\n");
+        for(Contact contact: contacts){
+            System.out.println(contact.toString());
+        }
+        System.out.println("\n");
     }
 
 
