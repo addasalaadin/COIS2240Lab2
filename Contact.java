@@ -28,4 +28,28 @@ class Contact {
 
     // Getters and Setters (if necessary)
     // ...
+
+    public String getName(){
+        return this.name;
+    }
+
+    public String getEmail(){
+        return this.email;
+    }
+
+    public String getPhoneNumber(){
+        return this.phoneNumber;
+    }
+
+    public void setName(setName){
+        this.setName = name;
+    }
+
+    public void setEmail(item){
+        this.email= email;
+    }
+
+    public void setPhoneNumber(item){
+        this.phoneNumber = phoneNumber;
+    }
 }
