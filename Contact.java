@@ -27,5 +27,7 @@ class Contact {
     }
 
     // Getters and Setters (if necessary)
-    // ...
+    public String getName(){
+        return name;
+    }
 }
