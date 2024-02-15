@@ -14,7 +14,17 @@ public class Program {
             // Remove a contact
             manager.removeContact("Alaadin");
     
-            // List contacts again to see the change
+            // List contacts again to observe the change
+            manager.listContacts();
+
+            // Remove a contact that does not exist
+            manager.removeContact("Alejandra");
+    
+            // List contacts again to see nothing has changed
+            manager.listContacts();
+
+            //Add the removed contact back in, and print updated list
+            manager.addContact(new Contact("Alaadin", "alaadin@trentu.ca", "123-456-7890"));
             manager.listContacts();
         }
 }

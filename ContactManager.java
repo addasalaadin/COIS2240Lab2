@@ -14,18 +14,28 @@ class ContactManager {
 
     // Method to add a new Contact
     public void addContact(Contact contact) {
-        // Your code here
+        //adds the actual contact to the object array called contacts
+        contacts.add(contact);
+        System.out.println("A new Contact was added: " + contact.getName());
     }
 
     // Method to remove a Contact by name
     public void removeContact(String name) {
-        // Your code here
+       boolean removedName = contacts.removeIf(contact ->contact.getName().equals(name));
+
+       if(removedName){
+        System.out.println("This contact was removed: "+ name);
+       } 
+       else {
+        System.out.println("The contact does not exist: "+ name);
+       } 
     }
 
     // Method to list all Contacts
     public void listContacts() {
-        // Your code here
+        System.out.println("This is the contact list: ");
+        for (Contact contact: contacts){
+            System.out.println("The contact name is: " + contact.getName() + ", E-mail: " + contact.getEmail() + ", Phone Number: " + contact.getPhoneNumber());
+        }
     }
-
-
 }
