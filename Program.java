@@ -5,14 +5,16 @@ public class Program {
             ContactManager manager = new ContactManager();
     
             // Add contacts
-            manager.addContact(new Contact("Alaadin", "alaadin@trentu.ca", "123-456-7890"));
-            manager.addContact(new Contact("Bob", "bob@example.com", "098-765-4321"));
+           // manager.addContact(new Contact("William", "william@trentu.ca", "123-456-3333"));
+            manager.addContact(new Contact("James", "James@example.com", "098-765-4444"));
+            manager.addContact(new Contact("Mark", "Mark@trentu.ca", "123-456-7777"));
+            manager.addContact(new Contact("George", "George@example.com", "098-765-9999"));
     
             // List contacts
             manager.listContacts();
     
             // Remove a contact
-            manager.removeContact("Alaadin");
+            manager.removeContact("William");
     
             // List contacts again to see the change
             manager.listContacts();
