@@ -16,7 +16,7 @@ class Contact {
         this.phoneNumber = phoneNumber;
     }
 
-    // Implement the toString method for Contact
+    // Implement the toString method for Contact, acting as the Setter
     @Override
     public String toString() {
         return "Contact{" +
@@ -26,6 +26,16 @@ class Contact {
                 '}';
     }
 
-    // Getters and Setters (if necessary)
-    // ...
+    // Getters for the properties of this class
+    public String getName(){
+        return name;
+    }
+    
+    public String getEmail(){
+        return email;
+    } 
+    
+    public String getPhoneNumber(){
+        return phoneNumber;
+    }
 }
