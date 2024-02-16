@@ -16,5 +16,11 @@ public class Program {
     
             // List contacts again to see the change
             manager.listContacts();
+
+            // Add a duplicate contact
+            manager.addContact(new Contact("Alaadin", "alaadin@trentu.ca", "123-456-7890"));
+
+            // List contacts again to see the change
+            manager.listContacts();
         }
 }
