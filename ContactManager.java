@@ -14,17 +14,40 @@ class ContactManager {
 
     // Method to add a new Contact
     public void addContact(Contact contact) {
-        // Your code here
+        contacts.add(contact);;
     }
 
     // Method to remove a Contact by name
-    public void removeContact(String name) {
-        // Your code here
+    public void removeContact(String Name) {
+        Iterator<Contact> it = contacts.iterator();
+        while (it.hasNext()) {
+            Contact contact = it.next();
+            if (contact.getName() == Name) {
+                it.remove();
+                System.out.println("\"" + Name + "\" is removed");
+            }
+        }
+    }
+    // Method to remove a Contact by name
+    public void removeContactByEmail(String Email) {
+        Iterator<Contact> it = contacts.iterator();
+        while (it.hasNext()) {
+            Contact contact = it.next();
+            if (contact.getEmail() == Email) {
+                it.remove();
+                System.out.println("\"" + Email + "\" is removed");
+            }
+        }
     }
 
     // Method to list all Contacts
     public void listContacts() {
-        // Your code here
+        System.out.println("\nList of Contacts: \n");
+        for (Contact contact : contacts){
+            System.out.print(contact.getName() + " | ");
+            System.out.print(contact.getEmail() + " | ");
+            System.out.print(contact.getPhoneNumber() + "\n");
+        }
     }
 
 
