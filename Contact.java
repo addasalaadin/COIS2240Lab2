@@ -1,22 +1,32 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
-// Define the Contact class
+// Contact Class
 class Contact {
-    // Properties of the Contact class
+    // Declaring
     private String name;
     private String email;
     private String phoneNumber;
 
-    // Constructor to initialize a new Contact object
+    // Constructor Contact Object
     public Contact(String name, String email, String phoneNumber) {
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
 
-    // Implement the toString method for Contact
+    // Contact Settings
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    // Override to make Contact a String
     @Override
     public String toString() {
         return "Contact{" +
@@ -25,7 +35,5 @@ class Contact {
                 ", phoneNumber='" + phoneNumber + '\'' +
                 '}';
     }
-
-    // Getters and Setters (if necessary)
-    // ...
 }
+
