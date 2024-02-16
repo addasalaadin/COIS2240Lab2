@@ -1,9 +1,9 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+
 
 // Define the Contact class
-class Contact {
+class Contact 
+{
     // Properties of the Contact class
     private String name;
     private String email;
@@ -26,6 +26,15 @@ class Contact {
                 '}';
     }
 
-    // Getters and Setters (if necessary)
-    // ...
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+}
 }
