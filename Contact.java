@@ -25,6 +25,10 @@ class Contact {
                 ", phoneNumber='" + phoneNumber + '\'' +
                 '}';
     }
+    //Create the getName method
+    public String getName() {
+        return name;
+    }
 
     // Getters and Setters (if necessary)
     // ...
