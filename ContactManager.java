@@ -20,7 +20,28 @@ class ContactManager {
 
     // Method to remove a Contact by name
     public void removeContact(String name) {
-     
+
+        boolean ifExists = false;
+
+        for(Iterator<Contact> iterator = contacts.iterator(); iterator.hasNext();){
+            Contact contact = iterator.next();
+            if(contact.getName() == name){
+                iterator.remove();
+                ifExists = true;
+            }
+        }
+
+        if (ifExists == false){
+            System.out.println("Contact does not exist.");
+        }  
+
+/*       for (Contact contact : contacts) {
+            if (contact.getName() == name){
+                contacts.remove(contact);
+            }
+        }
+        */  
+        /*   
         Boolean ifExists = false;
 
         for (Contact contact : contacts) {
@@ -32,6 +53,7 @@ class ContactManager {
         if (ifExists == false){
             System.out.println("Contact does not exist.");
         }    
+        */
     }
 
     // Method to list all Contacts
