@@ -10,7 +10,7 @@ public class Program {
     
             // List contacts
             manager.listContacts();
-    
+            System.out.println("----------------------------");
             // Remove a contact
             manager.removeContact("Alaadin");
     
