@@ -14,21 +14,31 @@ class ContactManager {
 
     // Method to add a new Contact
     public void addContact(Contact contact) {
-        // Your code here
+
         contacts.add(contact);
     }
 
     // Method to remove a Contact by name
     public void removeContact(String name) {
-        // Your code here
-        contacts.remove(name);
+     
+        Boolean ifExists = false;
+
+        for (Contact contact : contacts) {
+            if (contact.getName() == name){
+                ifExists = true;
+                contacts.remove(contact);
+            }
+        }    
+        if (ifExists == false){
+            System.out.println("Contact does not exist.");
+        }    
     }
 
     // Method to list all Contacts
     public void listContacts() {
-        // Your code here
+      
         for (Contact contact : contacts) {
-            contact.toString();
+            System.out.println(contact.toString());
         }
     }
 

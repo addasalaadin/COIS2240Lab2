@@ -41,15 +41,15 @@ class Contact {
         return this.phoneNumber;
     }
 
-    public void setName(setName){
-        this.setName = name;
+    public void setName(String newName){
+        this.name = newName;
     }
 
-    public void setEmail(item){
-        this.email= email;
+    public void setEmail(String newEmail){
+        this.email = newEmail;
     }
 
-    public void setPhoneNumber(item){
-        this.phoneNumber = phoneNumber;
+    public void setPhoneNumber(String newPhoneNumber){
+        this.phoneNumber = newPhoneNumber;
     }
 }
