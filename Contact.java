@@ -26,6 +26,15 @@ class Contact {
                 '}';
     }
 
-    // Getters and Setters (if necessary)
-    // ...
+    // Getters and Setters
+    public String getName() { return name; }
+    public void setName (String newName) { this.name = newName; }
+
+
+    public String getEmail() { return email; }
+    public void setEmail(String newEmail) { this.email = newEmail; }
+
+
+    public String getPhNo() { return phoneNumber; }
+    public void setPhNo(String phoneNumber) { this.phoneNumber = phoneNumber; }
 }
