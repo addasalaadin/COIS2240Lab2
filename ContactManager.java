@@ -30,30 +30,9 @@ class ContactManager {
                 ifExists = true;
             }
         }
-
         if (ifExists == false){
             System.out.println("Contact does not exist.");
         }  
-
-/*       for (Contact contact : contacts) {
-            if (contact.getName() == name){
-                contacts.remove(contact);
-            }
-        }
-        */  
-        /*   
-        Boolean ifExists = false;
-
-        for (Contact contact : contacts) {
-            if (contact.getName() == name){
-                ifExists = true;
-                contacts.remove(contact);
-            }
-        }    
-        if (ifExists == false){
-            System.out.println("Contact does not exist.");
-        }    
-        */
     }
 
     // Method to list all Contacts
