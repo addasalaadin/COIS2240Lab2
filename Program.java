@@ -7,13 +7,17 @@ public class Program {
             // Add contacts
             manager.addContact(new Contact("Alaadin", "alaadin@trentu.ca", "123-456-7890"));
             manager.addContact(new Contact("Bob", "bob@example.com", "098-765-4321"));
+            // manager.addContact(new Contact("Sara", "sara@example.com", "098-765-4321"));
             
             // List contacts
             manager.listContacts();
-            
+                        
             // Remove a contact
             manager.removeContact("Alaadin");
-                            
+            // manager.removeContact("Bob");
+            // manager.removeContact("Jessica");
+            // manager.removeContact("Sara");
+
             // List contacts again to see the change
             manager.listContacts();
         }
