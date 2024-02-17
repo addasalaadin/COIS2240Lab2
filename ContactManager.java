@@ -18,7 +18,7 @@ class ContactManager {
         contacts.add(contact);
         System.out.println("Contact added: " + contact.getName());
     }
-
+//comment
     // Method to remove a Contact by name
     public void removeContact(String name) {
         // Your code here
