@@ -9,6 +9,7 @@ class ContactManager {
 
     // Constructor to initialize the ContactManager
     public ContactManager() {
+        
         contacts = new ArrayList<>();
     }
 
@@ -42,6 +43,4 @@ class ContactManager {
             System.out.println(contact.toString());
         }
     }
-
-
 }
