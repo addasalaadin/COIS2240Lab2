@@ -27,10 +27,6 @@ class ContactManager {
                 System.out.println("\"" + Name + "\" is removed");
                 break;
             }
-            else{
-                System.out.println("Err: \"" + Name + "\" DOES NOT EXIST");
-            }
-            break;
         }
     }
     // Method to remove a Contact by name
@@ -43,10 +39,6 @@ class ContactManager {
                 System.out.println("\"" + Email + "\" is removed");
                 break;
             }
-            else{
-                System.out.println("Err: \"" + Email + "\" DOES NOT EXIST");
-            }
-            break;
         }
     }
 
@@ -59,6 +51,4 @@ class ContactManager {
             System.out.print(contact.getPhoneNumber() + "\n");
         }
     }
-
-
 }
