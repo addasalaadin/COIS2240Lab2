@@ -27,10 +27,10 @@ class ContactManager {
                 System.out.println("\"" + Name + "\" is removed");
                 break;
             }
-            else if(contact.getName() != Name){
+            else{
                 System.out.println("Err: \"" + Name + "\" DOES NOT EXIST");
-                break;
             }
+            break;
         }
     }
     // Method to remove a Contact by name
@@ -41,11 +41,12 @@ class ContactManager {
             if (contact.getEmail() == Email) {
                 it.remove();
                 System.out.println("\"" + Email + "\" is removed");
-            }
-            else if(contact.getEmail() != Email){
-                System.out.println("Err: \"" + Email + "\" DOES NOT EXIST");
                 break;
             }
+            else{
+                System.out.println("Err: \"" + Email + "\" DOES NOT EXIST");
+            }
+            break;
         }
     }
 

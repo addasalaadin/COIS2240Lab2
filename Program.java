@@ -18,10 +18,11 @@ public class Program {
         // List contacts
         manager.listContacts();
         System.out.println();
-        // Remove a contact
+        // Remove a contact by Name
         manager.removeContact("Alaadin");
-        //manager.removeContactByEmail("nirpatel@trentu.ca");
-        manager.removeContact("Tod");   // does not exist
+        // removing a contact by email
+        manager.removeContact("Tod");
+        manager.removeContactByEmail("nirpatel@trentu.ca");
 
         // List contacts again to see the change
         manager.listContacts();
