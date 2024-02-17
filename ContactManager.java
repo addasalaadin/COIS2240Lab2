@@ -27,5 +27,4 @@ class ContactManager {
         // Your code here
     }
 
-
 }
