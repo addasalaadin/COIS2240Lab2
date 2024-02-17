@@ -9,23 +9,38 @@ class ContactManager {
 
     // Constructor to initialize the ContactManager
     public ContactManager() {
+        
         contacts = new ArrayList<>();
     }
 
     // Method to add a new Contact
     public void addContact(Contact contact) {
-        // Your code here
+
+        contacts.add(contact);
     }
 
     // Method to remove a Contact by name
     public void removeContact(String name) {
-        // Your code here
+
+        boolean ifExists = false;
+
+        for(Iterator<Contact> iterator = contacts.iterator(); iterator.hasNext();){
+            Contact contact = iterator.next();
+            if(contact.getName() == name){
+                iterator.remove();
+                ifExists = true;
+            }
+        }
+        if (ifExists == false){
+            System.out.println("Contact does not exist.");
+        }  
     }
 
     // Method to list all Contacts
     public void listContacts() {
-        // Your code here
+      
+        for (Contact contact : contacts) {
+            System.out.println(contact.toString());
+        }
     }
-
-
 }
