@@ -13,8 +13,14 @@ public class Program {
     
             // Remove a contact
             manager.removeContact("Alaadin");
+
+            // List contacts to see the change
+            manager.listContacts();
+
+            // Remove a contact that does not exist.
+            manager.removeContact("Dev");
     
-            // List contacts again to see the change
+            // List contacts again to see the change(There will be no changes.)
             manager.listContacts();
         }
 }
