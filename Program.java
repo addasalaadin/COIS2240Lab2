@@ -20,7 +20,8 @@ public class Program {
         System.out.println();
         // Remove a contact
         manager.removeContact("Alaadin");
-        manager.removeContactByEmail("nirpatel@trentu.ca");
+        //manager.removeContactByEmail("nirpatel@trentu.ca");
+        manager.removeContact("Tod");   // does not exist
 
         // List contacts again to see the change
         manager.listContacts();
