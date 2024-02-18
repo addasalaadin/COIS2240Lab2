@@ -1,20 +1,23 @@
-public class Program {
-        // Main method for testinbg
-        public static void main(String[] args) {
-            // Create a ContactManager object
+public class Program 
+{
+        //Main method for testing
+        public static void main(String[] args) 
+        {
+            //Create a ContactManager object
             ContactManager manager = new ContactManager();
     
-            // Add contacts
+            //Add contacts
             manager.addContact(new Contact("Alaadin", "alaadin@trentu.ca", "123-456-7890"));
             manager.addContact(new Contact("Bob", "bob@example.com", "098-765-4321"));
     
-            // List contacts
+            //List contacts
             manager.listContacts();
     
-            // Remove a contact
+            //Remove a contact
             manager.removeContact("Alaadin");
+            manager.removeContact("Bezos");
     
-            // List contacts again to see the change
+            //List contacts again to see the change
             manager.listContacts();
         }
 }
