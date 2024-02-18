@@ -5,19 +5,25 @@ public class Program
         {
             //Create a ContactManager object
             ContactManager manager = new ContactManager();
-    
+
             //Add contacts
             manager.addContact(new Contact("Alaadin", "alaadin@trentu.ca", "123-456-7890"));
             manager.addContact(new Contact("Bob", "bob@example.com", "098-765-4321"));
     
             //List contacts
+            System.out.println("");
+            System.out.println("CONTACT LIST");
             manager.listContacts();
+            System.out.println("");
     
             //Remove a contact
             manager.removeContact("Alaadin");
             manager.removeContact("Bezos");
     
             //List contacts again to see the change
+            System.out.println("");
+            System.out.println("CONTACT LIST");
             manager.listContacts();
+            System.out.println("");
         }
 }

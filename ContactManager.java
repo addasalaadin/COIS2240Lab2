@@ -53,7 +53,6 @@ class ContactManager
             //Assigning the Contact object at current index to variable contact, allowing to access attributes and getters
             Contact contact = contacts.get(i);
             System.out.println(contact.toString());
-            System.out.println();
         }
     }
 
