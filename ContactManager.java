@@ -1,31 +1,50 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-// Define the ContactManager class
+// ContactManager class
 class ContactManager {
-    // List to store Contact objects
+    // Contact List
     private List<Contact> contacts;
 
-    // Constructor to initialize the ContactManager
+    // ContactManager Constructor
     public ContactManager() {
         contacts = new ArrayList<>();
     }
 
-    // Method to add a new Contact
+    // New Contact Method
     public void addContact(Contact contact) {
-        // Your code here
+        contacts.add(contact);
+        System.out.println("Contact added: " + contact.getName());
     }
 
-    // Method to remove a Contact by name
+    // Remove Contact Method 
     public void removeContact(String name) {
-        // Your code here
+        Iterator<Contact> iterator = contacts.iterator();
+        while (iterator.hasNext()) {
+            Contact contact = iterator.next();
+            if (contact.getName().equals(name)) {
+                iterator.remove();
+                System.out.println("Contact removed: " + name);
+                return;
+            }
+        }
+        System.out.println("Contact not found: " + name);
     }
 
-    // Method to list all Contacts
+    // All contacts List
     public void listContacts() {
-        // Your code here
+        if (contacts.isEmpty()) {
+            System.out.println("No contacts available.");
+        } else {
+            System.out.println("List of contacts:");
+            for (Contact contact : contacts) {
+                System.out.println(contact);
+            }
+        }
     }
 
-
+    // Show the contact method
+    public List<Contact> getContacts() {
+        return contacts;
+    }
 }
