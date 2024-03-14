@@ -28,4 +28,6 @@ class Contact {
 
     // Getters and Setters (if necessary)
     // ...
+    //hello
+    //hello
 }
